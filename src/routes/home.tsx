@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 import { LucideBriefcase, LucidePlayCircle, LucideBarChart3, LucideLineChart } from "lucide-react";
+import { Link } from "react-router";
 
 
 const HomePage = () => {
@@ -92,7 +93,9 @@ const HomePage = () => {
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <Link to={"/signin"}>
             <Button className="w-full sm:w-auto">Get Started</Button>
+            </Link>
           </div>
         </div>
 
