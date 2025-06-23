@@ -17,17 +17,38 @@ const HomePage = () => {
     },
     {
       name: "Sarvesh Kumar Roy",
-      title: "Data Science Intern @ Slash Mark IT Solutions",
+      title: "Data Science Intern @Slash Mark IT Solutions",
       quote:
         "The mock interviews felt real. I walked into my actual interview more confident than ever — and nailed it.",
       avatar: "assets/avatar/sarvesh.jpeg",
     },
     {
       name: "Gaurisha Maddaan",
-      title: "Software Developer @ Lagazon Technologies",
+      title: "Software Developer @Lagazon Technologies",
       quote:
         "I loved the instant feedback and progress tracking. It turned my interview anxiety into excitement.",
       avatar: "assets/avatar/gaurisha.jpeg",
+    },
+    {
+      name: "Ankit Kumar",
+      title: "SDE-1 @Mentorpal",
+      quote:
+        "The personalized tips after each mock interview made all the difference. I felt completely prepared and it showed in my final interview!",
+      avatar: "assets/avatar/ankit.jpeg",
+    },
+    {
+      name: "Bittu Rai",
+      title: "Graphic Designer @Virtualyyst",
+      quote:
+        "As someone new to tech interviews, this platform was a game-changer. The feedback felt like a mentor guiding me every step.",
+      avatar: "assets/avatar/bittu.jpeg",
+    },
+    {
+      name: "Nitesh Kumar",
+      title: "Management Trainee @Credgenics",
+      quote:
+        "Practicing on this platform became my daily ritual. It boosted my confidence and sharpened my answers like nothing else.",
+      avatar: "assets/avatar/nitesh.jpeg",
     },
   ];
 
@@ -71,17 +92,14 @@ const HomePage = () => {
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-4">
-            <Button className="w-full sm:w-auto">Start Mock Interview</Button>
-            <Button variant="outline" className="w-full sm:w-auto">
-              Sign Up Free
-            </Button>
+            <Button className="w-full sm:w-auto">Get Started</Button>
           </div>
         </div>
 
         {/* Right: Image */}
         <div className="flex justify-center">
           <img
-            src="/assets/img/AI.jpg" // <- Replace with your image path
+            src="/assets/img/AI.png" // <- Replace with your image path
             alt="AI Interview Assistance"
             className="w-full max-w-xl md:max-w-2xl rounded-xl shadow-lg"
           />

@@ -63,9 +63,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">About Us</h3>
             <p>
-              We are committed to helping you unlock your full potential with
-              AI-powered tools. Our platform offers a wide range of resources to
-              improve your interview skills and chances of success.
+            MockWise is your smart partner in interview preparation. Powered by advanced AI, we deliver realistic mock interview experiences to help you boost confidence, refine responses, and land your dream job. Whether you're a fresher or a professional, MockWise is here to make you interview-ready—anytime, anywhere.
             </p>
           </div>
 
@@ -88,7 +86,7 @@ export const Footer = () => {
           {/* Fourth Column: Address and Social Media */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <p className="mb-4">123 AI Street, Tech City, 12345</p>
+            <p className="mb-4">545, Saran School Road, Parvatiya Colony, Faridabad, 121005</p>
             <div className="flex gap-4">
               <SocialLink
                 href="https://facebook.com"
