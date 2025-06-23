@@ -19,6 +19,7 @@ export const MockInterviewPage = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
+      setIsLoading(true)
       const fetchInterview = async() => {
         if(interviewId){
           try {
@@ -34,6 +35,8 @@ export const MockInterviewPage = () => {
           } catch (error) {
             console.log(error);
             
+          }finally{
+            setIsLoading(false)
           }
         }
       }

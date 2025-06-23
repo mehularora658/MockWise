@@ -9,7 +9,7 @@ import { ToolTipButton } from "./tooltip-button";
 import { toast } from "sonner";
 import { chatSession } from "@/scripts";
 import { SaveModal } from "./save-modal";
-import { addDoc, collection, getDoc, getDocs, query, serverTimestamp, where } from "firebase/firestore";
+import { addDoc, collection, getDocs, query, serverTimestamp, where } from "firebase/firestore";
 import { db } from "@/config/firebase.config";
 
 interface RecordAnswerProps{
@@ -26,7 +26,7 @@ interface AIResponse{
 export const RecordAnswer = ({question, isWebCam, setIsWebCam}: RecordAnswerProps) => {
 
     const {
-        error,
+        
         interimResult,
         isRecording,
         results,
@@ -178,7 +178,7 @@ Return **only a JSON** object in this format (no commentary, no explanation):
             }else{
               //save the user answer
 
-              const questionAnswerRef = await addDoc(collection(db,"userAnswers"),{
+              await addDoc(collection(db,"userAnswers"),{
                 mockIdRef: interviewId,
                 question: question.question,
                 correct_ans: question.answer,
